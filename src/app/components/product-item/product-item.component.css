@@ -9,6 +9,6 @@ div {
     border-bottom: 1px #ccc dotted;
 }
 .out-of-stock{
-    color: red;
-    text-decoration: line-through;
+    background: #ff4e0a;
+    color: white;
 }
