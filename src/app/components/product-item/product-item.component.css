@@ -1,0 +1,14 @@
+div {
+  display: grid;
+  grid-template-columns: 10px 30% 40px 40px auto;
+  grid-gap: 30px;
+}
+.product{
+    background: #f4f4f4;
+    padding: 10px;
+    border-bottom: 1px #ccc dotted;
+}
+.out-of-stock{
+    color: red;
+    text-decoration: line-through;
+}
