@@ -1,7 +1,5 @@
-div {
-  display: grid;
-  grid-template-columns: 10px 30% 40px 40px auto;
-  grid-gap: 30px;
+table{
+  width: 100%;
 }
 .product{
     background: #f4f4f4;
@@ -9,6 +7,6 @@ div {
     border-bottom: 1px #ccc dotted;
 }
 .out-of-stock{
-    background: #ff4e0a;
+    background-color: #ff4e0a !important;
     color: white;
 }

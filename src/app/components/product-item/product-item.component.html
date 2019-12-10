@@ -1,8 +1,14 @@
-<div [ngClass]="setClass()">
-    <p>{{ product.ProductID }}</p>
-    <h3>{{ product.ProductName }}</h3>
-    <p>{{ product.UnitPrice }}</p>
-    <p>{{ product.UnitsInStock }}</p>
-    <p>{{ product.DeliveryOn }}</p>
-</div>
-
+<kendo-grid [rowClass]="rowCallback"  [data]="gridData" [height]="410">
+        <kendo-grid-column  field="ProductID" title="ID" width="40">
+        </kendo-grid-column>
+        <kendo-grid-column field="ProductName" title="Name" width="250">
+        </kendo-grid-column>
+        <kendo-grid-column field="UnitPrice" title="Price" width="80">
+        </kendo-grid-column>
+        <kendo-grid-column field="UnitsInStock" title="In stock" width="80">
+        </kendo-grid-column>
+        <kendo-grid-column field="DeliveryOn" title="Delivery On" width="80">
+        </kendo-grid-column>
+            
+        
+    </kendo-grid>
