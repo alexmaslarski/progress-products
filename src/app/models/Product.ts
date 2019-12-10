@@ -4,6 +4,5 @@ export class Product {
     UnitPrice:number;
     UnitsInStock:number;
     DeliveryOn: Date;
-    Discontinued: boolean;
 
 }
