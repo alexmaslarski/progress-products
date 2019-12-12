@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { productsData } from './products'; // import data
 import { RowClassArgs } from '@progress/kendo-angular-grid';
 @Component({
