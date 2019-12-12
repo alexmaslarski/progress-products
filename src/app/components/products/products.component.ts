@@ -1,6 +1,5 @@
 import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
-import { Product } from '../../models/Product';
-import { products } from './products';
+import { productsData } from './products'; // import data
 import { RowClassArgs } from '@progress/kendo-angular-grid';
 @Component({
   selector: 'app-products',
@@ -10,19 +9,16 @@ import { RowClassArgs } from '@progress/kendo-angular-grid';
 })
 export class ProductsComponent implements OnInit {
 
-  products:Product[];
-
   constructor() { }
 
   ngOnInit() {
-    this.products = products;
+
   }
-  public rowCallback(context: RowClassArgs) {
-    const inStock = context.dataItem.UnitsInStock >0;
+  public rowCallback(context: RowClassArgs) { 
+    const inStock:boolean = context.dataItem.UnitsInStock >0; // create a boolean that stores whether the current dataItem has units in stock or not
     return {
-        product: inStock,
-        'out-of-stock': !inStock
+        'out-of-stock': !inStock // return out-of-stock classname if inStock is false
     };
 }
-  public gridData: any[] = products;
+  public gridData: any[] = productsData; //declare and initialize gridData with ProductData
 }

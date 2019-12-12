@@ -1,0 +1,20 @@
+GitHub: https://github.com/alexmaslarski/progress-products
+
+
+The purpose of the project was to visualise a list of products.
+
+In order to fit in with the technologies used by Progress, I decided to use Angular, which I have very little experience with.
+At first I created a very simple app and then started improving it by using KendoUI (You can see my progress in GitHub).
+It was the first time I've used KendoUI and found it a bit confusing at first, but after going through some parts of the
+docs I managed to implement it into my solution.
+
+My solution consists of two components - the main one and one containing kendoUI's grid, which uses the data passed in by
+a products.ts file containing all products. (This can easily be fetched by a server in order to make it dynamic.)
+
+Overall I think I found myself around Angular and KendoUI relatively fast, the only troubles I had was with
+[rowClass] which didn't seem to do anything, despite doing everything as stated in the docs. It turned out to be a problem
+with my live server not compiling all resources properly. 
+
+Some feedback about kendoUI's docs:
+Generally I think they are quite well structured, but I think some parts of the Angular docs are lacking examples,
+which are available in the JQuery docs for example. 

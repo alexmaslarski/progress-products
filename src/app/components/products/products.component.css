@@ -2,11 +2,6 @@ table{
     width: 100%;
     height: 100%;
   }
-  .product{
-      background: #f4f4f4;
-      padding: 10px;
-      border-bottom: 1px #ccc dotted;
-  }
   .out-of-stock{
       background-color: #ff4e0a !important;
       color: white;

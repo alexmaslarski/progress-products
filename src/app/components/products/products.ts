@@ -1,4 +1,4 @@
-export const products = [
+export const productsData = [
     {
         "ProductID": 1,
         "ProductName": "Chai",
@@ -17,7 +17,7 @@ export const products = [
         "ProductID": 3,
         "ProductName": "Aniseed Syrup",
         "UnitPrice": 10,
-        "UnitsInStock": 0,
+        "UnitsInStock": 1,
         "DeliveryOn": new Date(1996, 8, 26)
     },
     {
